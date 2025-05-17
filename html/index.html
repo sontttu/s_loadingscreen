@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div class="background" id="background"></div>
+
+    <div class="center-status">
+        <div class="loader"></div>
+        <p class="status-text">Ladataan palvelimelle...</p>
+    </div>
+
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" class="logo" />
+    </div>
+
+    <button id="music-toggle" class="music-button" title="Toggle music">
+        <i id="music-icon" class="fas fa-volume-up"></i>
+    </button>
+
+    <audio id="bg-music" autoplay loop>
+        <source src="music/background.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
